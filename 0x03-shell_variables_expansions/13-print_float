@@ -1,0 +1,2 @@
+#!/bin/bahs
+printf ("%.2f\n", $NUM) 
