@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(bc <<< "obase=bestchol; ibase=water; $WATER + ibase=stir; $STIR")
+echo $(printf "%d\n" "$WATER" "$STIR" | awk '{sum+=$1} END {printf "%d", sum}')
